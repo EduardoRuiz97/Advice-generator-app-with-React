@@ -1,0 +1,75 @@
+.advice-container {
+  width: 340px;
+  margin: 200px auto;
+  padding: 40px 20px 50px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.advice-container__id {
+ color: hsl(150, 100%, 66%);
+ font-size: 15px;
+ margin-bottom: 20px;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+}
+
+.advice-container__advice{
+  font-size: 25px;
+  color: hsl(193, 38%, 86%);
+  margin-bottom: 20px;
+}
+
+.advice-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.advice-container__actions {
+  background-color: hsl(150, 100%, 66%);
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 15px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -27px;
+  left: 42%;
+  box-shadow: 3px 3px 15px hsl(150, 100%, 66%), -3px -3px 15px hsl(150, 100%, 66%) ;
+}
+
+.button-animation {
+  animation: btn-animation 0.3s;
+}
+
+@keyframes btn-animation {
+  0%{
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.2);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+
+}
+
+@media screen and (min-width: 777px) {
+
+  .advice-container {
+    width: 500px;
+  }
+
+  .advice-container__actions {
+    left: 45%;
+  }
+  
+}
